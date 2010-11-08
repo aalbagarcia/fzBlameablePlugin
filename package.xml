@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.9.0" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>fzBlameablePlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>Plugin containing modified Blameable behaviour that connects with sfGuardUser by default.</summary>
+ <description>fzBlameablePlugin provides integration with sfGuardUser and relation alias from sfGuardUser to created/updated model.</description>
+ <lead>
+  <name>Grzegorz Śliwiński</name>
+  <user>fizyk</user>
+  <email>fizyk@fizyk.net.pl</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-07-27</date>
+ <time>21:13:43</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+ <notes>
+-
+ </notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="f21c407128ece6d4d657c0c95d3af3cd" name="lib/doctrine/extension/fzBlameable.php" role="data"/>
+   <file md5sum="dac3a7a1758498f12c198c537ee2aa9e" name="lib/doctrine/extension/fzBlameableListener.php" role="data"/>
+   <file md5sum="df3d5ce102c666fcd1691447f2207518" name="README" role="data"/>
+   <file md5sum="7266a93b753b03bc5f00522e65722b79" name="LICENSE" role="data"/>
+   <file md5sum="df3d5ce102c666fcd1691447f2207518" name="README.markdown" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <license>MIT</license>
+   <date>2010-07-27</date>
+   <notes>
+* fizyk: added relation alias from sfGuardUser to Blameable model.
+* fizyk: changed default Blameable options.
+* fizyk: modified Blameable listener to use sfGuardUser.
+   </notes>
+  </release>
+ </changelog>
+</package>
